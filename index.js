@@ -15,6 +15,10 @@ setInterval(() => {
 	}
 }, 24 * 60 * 60 * 1000);
 
+app.get("/", (req, res) => {
+	res.send("Go to /getValue");
+});
+
 app.get("/getValue", (req, res) => {
 	res.send(`${value}`);
 });
