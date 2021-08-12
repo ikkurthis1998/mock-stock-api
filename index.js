@@ -13,7 +13,7 @@ setInterval(() => {
 	if (value < 0) {
 		value = -value;
 	}
-}, 24 * 60 * 60 * 1000);
+}, 60 * 1000);
 
 app.get("/", (req, res) => {
 	res.send("Go to /getValue");
