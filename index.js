@@ -24,7 +24,7 @@ app.get("/", (req, res) => {
 });
 
 app.get("/getValue", (req, res) => {
-	res.send(`${value}`);
+	res.send(`${Math.floor(value)}`);
 });
 
 app.listen(process.env.PORT || port, () => {
