@@ -1,6 +1,10 @@
 const express = require("express");
+const cors = require("cors");
 const app = express();
-const port = 3000;
+
+app.use(cors({ origin: "*" }));
+
+const port = 3004;
 
 let value = 110;
 
